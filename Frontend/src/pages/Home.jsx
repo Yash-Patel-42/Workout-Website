@@ -147,24 +147,180 @@ function Home() {
       ],
     },
     {
-      day: "Day-11 (11/04/2024)",
+      day: `Day-11 (${currentMonthDates[10]})`,
       videos: [
         {
-          title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
+          title: "Abs Workout 1",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
         },
         {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
+          title: "Abs Workout 2",
+          url: "https://www.youtube.com/watch?v=Wt2nS5WWg5s",
         },
       ],
     },
     {
-      day: "Day-12 (12/04/2024)",
+      day: `Day-12 (${currentMonthDates[11]})`,
+      videos: [
+        {
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=xBUBXAwaavg",
+        },
+        {
+          title: "Chest",
+          url: "https://www.youtube.com/watch?v=zxQpfu7fIfc",
+        },
+      ],
+    },
+    {
+      day: `Day-13 (${currentMonthDates[12]})`,
+      videos: [
+        {
+          title: "Triceps",
+          url: "https://www.youtube.com/watch?v=JfSee0Q-vRQ",
+        },
+        {
+          title: "Biceps & Forearms",
+          url: "https://www.youtube.com/watch?v=JyV7mUFSpXs",
+        },
+      ],
+    },
+    {
+      day: `Day-14 (${currentMonthDates[13]})`,
+      videos: [
+        {
+          title: "Legs",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
+        },
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
+        },
+      ],
+    },
+    {
+      day: `Day-15 (${currentMonthDates[14]})`,
+      videos: [
+        {
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=xBUBXAwaavg",
+        },
+        {
+          title: "Back (Repeat)",
+          url: "https://www.youtube.com/watch?v=Sa0sBKUiOvU",
+        },
+      ],
+    },
+    {
+      day: `Day-16 (${currentMonthDates[15]})`,
       videos: [
         {
           title: "Chest",
           url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
+        },
+        {
+          title: "Chest (Repeat)",
+          url: "https://www.youtube.com/watch?v=zxQpfu7fIfc",
+        },
+      ],
+    },
+    {
+      day: `Day-17 (${currentMonthDates[16]})`,
+      videos: [
+        {
+          title: "Arms",
+          url: "https://www.youtube.com/watch?v=bQ7GJlJ9d_E",
+        },
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
+        },
+      ],
+    },
+    {
+      day: `Day-18 (${currentMonthDates[17]})`,
+      videos: [
+        {
+          title: "Abs Workout 1",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
+        },
+        {
+          title: "Abs Workout 2",
+          url: "https://www.youtube.com/watch?v=Wt2nS5WWg5s",
+        },
+      ],
+    },
+    {
+      day: `Day-19 (${currentMonthDates[18]})`,
+      videos: [
+        {
+          title: "Legs",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
+        },
+        {
+          title: "Legs (Repeat)",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
+        },
+      ],
+    },
+    {
+      day: `Day-20 (${currentMonthDates[19]})`,
+      videos: [
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=PxlmMzPqi_4",
+        },
+        {
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=Sa0sBKUiOvU",
+        },
+      ],
+    },
+    {
+      day: `Day-21 (${currentMonthDates[20]})`,
+      videos: [
+        {
+          title: "Arms",
+          url: "https://www.youtube.com/watch?v=bQ7GJlJ9d_E",
+        },
+        {
+          title: "Abs",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
+        },
+      ],
+    },
+    {
+      day: `Day-22 (${currentMonthDates[21]})`,
+      videos: [
+        {
+          title: "Chest",
+          url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
+        },
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
+        },
+      ],
+    },
+    {
+      day: `Day-23 (${currentMonthDates[22]})`,
+      videos: [
+        {
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=xBUBXAwaavg",
+        },
+        {
+          title: "Biceps & Forearms",
+          url: "https://www.youtube.com/watch?v=JyV7mUFSpXs",
+        },
+      ],
+    },
+    {
+      day: `Day-24 (${currentMonthDates[23]})`,
+      videos: [
+        {
+          title: "Legs",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
         {
           title: "Triceps",
@@ -173,37 +329,37 @@ function Home() {
       ],
     },
     {
-      day: "Day-13 (13/04/2024)",
+      day: `Day-25 (${currentMonthDates[24]})`,
       videos: [
         {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=Cx1j1L0I-7I",
+          title: "Abs Workout 1",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
         },
         {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw",
+          title: "Abs Workout 2",
+          url: "https://www.youtube.com/watch?v=Wt2nS5WWg5s",
         },
       ],
     },
     {
-      day: "Day-14 (14/04/2024)",
+      day: `Day-26 (${currentMonthDates[25]})`,
       videos: [
-        {
-          title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
-        },
         {
           title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
+          url: "https://www.youtube.com/watch?v=PxlmMzPqi_4",
+        },
+        {
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=Sa0sBKUiOvU",
         },
       ],
     },
     {
-      day: "Day-15 (15/04/2024)",
+      day: `Day-27 (${currentMonthDates[26]})`,
       videos: [
         {
           title: "Chest",
-          url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
+          url: "https://www.youtube.com/watch?v=zxQpfu7fIfc",
         },
         {
           title: "Triceps",
@@ -212,197 +368,45 @@ function Home() {
       ],
     },
     {
-      day: "Day-16 (16/04/2024)",
-      videos: [
-        {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4",
-        },
-      ],
-    },
-    {
-      day: "Day-17 (17/04/2024)",
-      videos: [
-        {
-          title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk",
-        },
-      ],
-    },
-    {
-      day: "Day-18 (18/04/2024)",
-      videos: [
-        {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=Cx1j1L0I-7I",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw",
-        },
-      ],
-    },
-    {
-      day: "Day-19 (19/04/2024)",
+      day: `Day-28 (${currentMonthDates[27]})`,
       videos: [
         {
           title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
         {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
+          title: "Legs (Repeat)",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
       ],
     },
     {
-      day: "Day-20 (20/04/2024)",
+      day: `Day-29 (${currentMonthDates[28]})`,
+      videos: [
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
+        },
+        {
+          title: "Triceps",
+          url: "https://www.youtube.com/watch?v=JfSee0Q-vRQ",
+        },
+        {
+          title: "Biceps & Forearms",
+          url: "https://www.youtube.com/watch?v=JyV7mUFSpXs",
+        },
+      ],
+    },
+    {
+      day: `Day-30 (${currentMonthDates[29]})`,
       videos: [
         {
           title: "Chest",
           url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
         },
         {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=JfSee0Q-vRQ",
-        },
-      ],
-    },
-    {
-      day: "Day-21 (21/04/2024)",
-      videos: [
-        {
           title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4",
-        },
-      ],
-    },
-    {
-      day: "Day-22 (22/04/2024)",
-      videos: [
-        {
-          title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
-        },
-        {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
-        },
-      ],
-    },
-    {
-      day: "Day-23 (23/04/2024)",
-      videos: [
-        {
-          title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk",
-        },
-      ],
-    },
-    {
-      day: "Day-24 (24/04/2024)",
-      videos: [
-        {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=Cx1j1L0I-7I",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw",
-        },
-      ],
-    },
-    {
-      day: "Day-25 (25/04/2024)",
-      videos: [
-        {
-          title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
-        },
-        {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
-        },
-      ],
-    },
-    {
-      day: "Day-26 (26/04/2024)",
-      videos: [
-        {
-          title: "Chest",
-          url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=JfSee0Q-vRQ",
-        },
-      ],
-    },
-    {
-      day: "Day-27 (27/04/2024)",
-      videos: [
-        {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4",
-        },
-      ],
-    },
-    {
-      day: "Day-28 (28/04/2024)",
-      videos: [
-        {
-          title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk",
-        },
-      ],
-    },
-    {
-      day: "Day-29 (29/04/2024)",
-      videos: [
-        {
-          title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
-        },
-        {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
-        },
-      ],
-    },
-    {
-      day: "Day-30 (30/04/2024)",
-      videos: [
-        {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=Cx1j1L0I-7I",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw",
+          url: "https://www.youtube.com/watch?v=xBUBXAwaavg",
         },
       ],
     },
