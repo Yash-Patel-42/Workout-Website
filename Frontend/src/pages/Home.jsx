@@ -1,7 +1,23 @@
 function Home() {
+  // Function to generate dates for the current month
+  const generateCurrentMonthDates = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    
+    return Array.from({ length: daysInMonth }, (_, i) => {
+      const day = i + 1;
+      const date = new Date(year, month, day);
+      return date.toLocaleDateString('en-GB').split('/').join('/');
+    });
+  };
+
+  const currentMonthDates = generateCurrentMonthDates();
+
   const workouts = [
     {
-      day: "Day-1 (01/04/2024)",
+      day: `Day-1 (${currentMonthDates[0]})`,
       videos: [
         {
           title: "Chest",
@@ -14,131 +30,119 @@ function Home() {
       ],
     },
     {
-      day: "Day-2 (02/04/2024)",
+      day: `Day-2 (${currentMonthDates[1]})`,
       videos: [
         {
           title: "Back",
-          url: "https://www.youtube.com/watch?v=Cx1j1L0I-7I&feature=youtu.be",
+          url: "https://www.youtube.com/watch?v=xBUBXAwaavg",
         },
         {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw&feature=youtu.be",
+          title: "Biceps & Forearms",
+          url: "https://www.youtube.com/watch?v=JyV7mUFSpXs",
         },
       ],
     },
     {
-      day: "Day-3 (03/04/2024)",
+      day: `Day-3 (${currentMonthDates[2]})`,
       videos: [
         {
           title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg&feature=youtu.be",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
         {
           title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0&feature=youtu.be",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
         },
       ],
     },
     {
-      day: "Day-4 (04/04/2024)",
+      day: `Day-4 (${currentMonthDates[3]})`,
       videos: [
+        {
+          title: "Abs Workout 1",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
+        },
+        {
+          title: "Abs Workout 2",
+          url: "https://www.youtube.com/watch?v=Wt2nS5WWg5s",
+        },
+      ],
+    },
+    {
+      day: `Day-5 (${currentMonthDates[4]})`,
+      videos: [
+        {
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=PxlmMzPqi_4",
+        },
         {
           title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY&feature=youtu.be",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk&feature=youtu.be",
+          url: "https://www.youtube.com/watch?v=zxQpfu7fIfc",
         },
       ],
     },
     {
-      day: "Day-5 (05/04/2024)",
+      day: `Day-6 (${currentMonthDates[5]})`,
       videos: [
         {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw&feature=youtu.be",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4&feature=youtu.be",
-        },
-      ],
-    },
-    {
-      day: "Day-6 (06/04/2024)",
-      videos: [
-        {
-          title: "30:HIIT",
-          url: "https://www.youtube.com/watch?v=F3VuRqrGAlU",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=NY1P6AbBtEw",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=JfSee0Q-vRQ",
-        },
-      ],
-    },
-    {
-      day: "Day-7 (07/04/2024)",
-      videos: [
-        {
-          title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY",
-        },
-        {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk",
+          title: "Arms",
+          url: "https://youtube.com/watch?v=bQ7GJlJ9d_E",
         },
         {
           title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw",
+          url: "https://www.youtube.com/watch?v=Sa0sBKUiOvU",
         },
       ],
     },
     {
-      day: "Day-8 (08/04/2024)",
+      day: `Day-7 (${currentMonthDates[6]})`,
       videos: [
         {
           title: "Legs",
-          url: "https://www.youtube.com/watch?v=shzF_vz3nVg",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
         {
-          title: "Shoulders",
-          url: "https://www.youtube.com/watch?v=Z6e3ORt64V0",
-        },
-        {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4",
+          title: "Abs",
+          url: "https://www.youtube.com/watch?v=3SUtOSaOn1M",
         },
       ],
     },
     {
-      day: "Day-9 (09/04/2024)",
+      day: `Day-8 (${currentMonthDates[7]})`,
       videos: [
         {
           title: "Chest",
-          url: "https://www.youtube.com/watch?v=wT4va1ZrFWY",
+          url: "https://www.youtube.com/watch?v=xXC8mbDr9zI",
         },
         {
-          title: "Triceps",
-          url: "https://www.youtube.com/watch?v=EUj1zW5cWbk",
+          title: "Back",
+          url: "https://www.youtube.com/watch?v=Sa0sBKUiOvU",
         },
       ],
     },
     {
-      day: "Day-10 (10/04/2024)",
+      day: `Day-9 (${currentMonthDates[8]})`,
       videos: [
         {
-          title: "Back",
-          url: "https://www.youtube.com/watch?v=thfLz5ymNEw",
+          title: "Arms",
+          url: "https://www.youtube.com/watch?v=bQ7GJlJ9d_E",
         },
         {
-          title: "Biceps",
-          url: "https://www.youtube.com/watch?v=RHJxRzqvPZ4",
+          title: "Shoulders",
+          url: "https://www.youtube.com/watch?v=QVaijMZ2mp8",
+        },
+      ],
+    },
+    {
+      day: `Day-10 (${currentMonthDates[9]})`,
+      videos: [
+        {
+          title: "Legs",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
+        },
+        {
+          title: "Legs (Repeat)",
+          url: "https://www.youtube.com/watch?v=WA23NHfNq-s",
         },
       ],
     },
@@ -563,3 +567,4 @@ function Home() {
 }
 
 export default Home
+
