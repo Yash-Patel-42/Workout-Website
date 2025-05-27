@@ -7,15 +7,15 @@ import Personal from "./pages/Personal"
 
 function App() {
   return (
-    <div>
+    <div className="relative min-h-screen">
       <Navbar />
-      <div>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/personal" element={<Personal />} />
         </Routes>
-      </div>
+      </main>
     </div>
   )
 }
