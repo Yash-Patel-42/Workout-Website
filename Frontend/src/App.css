@@ -12,14 +12,74 @@
   }
 }
 
+@keyframes borderAnimation {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.animated-border {
+  --border-size: 2.5px;
+  --border-angle: var(--angle);
+  background-image: conic-gradient(
+    from var(--border-angle),
+    #4f46e5,
+    #9333ea,
+    #ec4899,
+    #4f46e5
+  );
+  animation: borderAnimation 8s linear infinite;
+}
+
+.card-inner {
+  background: rgba(17, 17, 17, 1);
+  transition: all 0.3s ease;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px);
+  transform-style: preserve-3d;
+  will-change: transform;
+  backdrop-filter: blur(12px);
+  border-radius: 1.1rem;
+}
+
+.card-inner:hover {
+  background: 
+    radial-gradient(
+      170px 155px at var(--gradient-x, 50%) var(--gradient-y, 50%),
+      rgba(147, 51, 234, 0.095) 0%,
+      rgba(147, 51, 234, 0.092) 35%,
+      rgba(147, 51, 234, 0.08) 55%,
+      rgba(147, 51, 234, 0.07) 65%,
+      rgba(147, 51, 234, 0.055) 75%,
+      rgba(147, 51, 234, 0.04) 82%,
+      rgba(147, 51, 234, 0.03) 88%,
+      transparent 100%
+    ),
+    rgba(17, 17, 17, 1);
+}
+
+/* Card sizes for different layouts */
+.sm\:col-span-2 .card-inner {
+  backdrop-filter: blur(16px);
+}
+
+.sm\:col-span-2.sm\:row-span-2 .card-inner {
+  backdrop-filter: blur(20px);
+}
+
 .animated-gradient-border {
   position: relative;
   isolation: isolate;
   border-radius: 1rem;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px);
-  transition: transform 0.10s ease-out;
   transform-style: preserve-3d;
-  cursor: pointer;
   will-change: transform;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -58,7 +118,7 @@
   height: 100%;
   width: 100%;
   backdrop-filter: blur(16px);
-  transition: all 0.10s ease-out;
+  transition: all 0.3s ease;
 }
 
 .animated-gradient-border:hover > div {
@@ -70,6 +130,6 @@
 }
 
 .card-content {
-  transform: translateZ(50px);
   transform-style: preserve-3d;
+  transform: translateZ(50px);
 }

@@ -4,11 +4,13 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Personal from "./pages/Personal"
+import SplashCursor from "./components/SplashCursor/SplashCursor"
 
 function App() {
   return (
     <div className="relative min-h-screen">
       <Navbar />
+      <SplashCursor/>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
