@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@keyframes gradientBorderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-border {
+  position: relative;
+  isolation: isolate;
+  border-radius: 1rem;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px);
+  transition: transform 0.10s ease-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  will-change: transform;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  background: linear-gradient(
+    45deg,
+    rgba(130, 132, 242, 0.95),
+    rgba(239, 127, 146, 0.95),
+    rgba(131, 135, 243, 0.95),
+    rgba(230, 129, 179, 0.95)
+  );
+  background-size: 200% 200%;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.animated-gradient-border:hover::before {
+  animation: gradientBorderMove 8s ease infinite;
+  opacity: 1;
+}
+
+.animated-gradient-border > div {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.95),
+    rgba(15, 23, 42, 0.95)
+  );
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  transition: all 0.10s ease-out;
+}
+
+.animated-gradient-border:hover > div {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.9),
+    rgba(15, 23, 42, 0.9)
+  );
+}
+
+.card-content {
+  transform: translateZ(50px);
+  transform-style: preserve-3d;
+}
