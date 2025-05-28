@@ -1,10 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
-import { FiSun, FiMoon } from "react-icons/fi";
 
 function Navbar() {
   const location = useLocation();
-  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { label: "Home", path: "/" },
@@ -38,15 +35,6 @@ function Navbar() {
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all group-hover:w-full"></span>
             </Link>
           ))}
-
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="ml-2 sm:ml-4 p-2 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 text-indigo-400 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition duration-300"
-            aria-label="Toggle Theme"
-          >
-            {theme === "dark" ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
-          </button>
         </div>
       </div>
     </nav>
