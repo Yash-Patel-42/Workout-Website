@@ -60,7 +60,7 @@ function Home() {
         ? 'bg-gradient-to-b from-black via-black/98 to-black/95 text-white' 
         : 'bg-gradient-to-b from-white via-gray-50/98 to-gray-100/95 text-gray-900'}`}>
       {/* Top Gradient Buttons */}
-      <div className="relative z-10 mb-12 flex flex-wrap gap-3 sm:gap-4 justify-center">
+      <div className="relative z-10 mt-6 mb-12 flex flex-wrap gap-3 sm:gap-4 justify-center">
         {[
           {
             text: "20:HIIT",

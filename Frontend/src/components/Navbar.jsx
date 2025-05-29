@@ -19,7 +19,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full backdrop-blur-md border-b shadow-2xl z-50 transition-colors duration-300 
+    <nav className={`fixed w-full backdrop-blur-md border-b shadow-xl z-50 transition-colors duration-300 
       ${isDark 
         ? 'bg-gradient-to-r from-black/95 via-black/98 to-black/95 border-white/5' 
         : 'bg-gradient-to-r from-white/95 via-white/98 to-white/95 border-black/5'}`}>
@@ -57,7 +57,7 @@ function Navbar() {
               onClick={toggleDynamicLayout}
               className={`p-2 rounded-full transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-800
                 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}
-              aria-label="Toggle dynamic layout"
+              aria-label="Toggle Dynamic Layout"
               title={`${isDynamicLayout ? 'Disable' : 'Enable'} dynamic card layout`}
             >
               {isDynamicLayout ? (
