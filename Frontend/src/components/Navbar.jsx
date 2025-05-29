@@ -13,7 +13,8 @@ function Navbar() {
   } = useTheme();
 
   const navItems = [
-    { label: "Home", path: "/" },
+    { label: "Get Started", path: "/getstarted" },
+    { label: "Home", path: "/home" },
     { label: "About", path: "/about" },
     { label: "Personal", path: "/personal" },
   ];
