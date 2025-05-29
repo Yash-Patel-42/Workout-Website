@@ -32,7 +32,7 @@ function Navbar() {
               }`}
             >
               {label}
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all group-hover:w-full duration-300 ease-in-out rounded-full"></span>
             </Link>
           ))}
         </div>
